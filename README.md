@@ -77,12 +77,13 @@ bash -i <(curl -s https://install.aztec.network)
 echo 'export PATH="$HOME/.aztec/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
-![440142705-be70b89b-e644-4d75-9087-1352cd544ad5](https://github.com/user-attachments/assets/fd5b6f95-e248-49cd-a188-0d573136e667)
 
 Check version 
 ```
 aztec
 ```
+
+![440142705-be70b89b-e644-4d75-9087-1352cd544ad5](https://github.com/user-attachments/assets/fd5b6f95-e248-49cd-a188-0d573136e667)
 
 Update version 
 ```
