@@ -15,17 +15,9 @@ Aztec-Network-Node-Run-Full-Guide| & | System Requirements.
 > [!Note]
 > **You can start running this node on a `4-core CPU`, `6 GB of RAM` and `25 GB of storage`. However, as uptime increases, it's important to meet the recommended system requirements—otherwise, your node may eventually crash.**
 
-## 🌐 Rent VPS
-> [!Note]
-> **Renting VPS is not necessarily needed if your main goal is to take `Apprentice` role on Aztec Discord, You can run this node on WSL for 30-60 mins to get that role**
 
-# Software Requirements for PC Users
 
-1. For Windows Install WSL - https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command
-2. For Windows Install Ubuntu after Installing WSL - https://apps.microsoft.com/detail/9PDXGNCFSCZV?hl=en-us&gl=IN&ocid=pdpshare
-3. Install Docker - https://www.docker.com/products/docker-desktop/
-
-## Software Requirements for VPS Users (Additional Only for VPS Users to Download Docker)
+## Software Requirements for VPS Users ( Only for VPS Users to Download Docker)
 
 ```
 sudo apt update -y
