@@ -154,9 +154,9 @@ aztec start --node --archiver --sequencer \
   --network alpha-testnet \
   --l1-rpc-urls RPC_URL  \
   --l1-consensus-host-urls BEACON_URL \
-  --sequencer.validatorPrivateKey YourPrivateKey \
-  --sequencer.coinbase YourevmAddress \
-  --p2p.p2pIp IP
+  --sequencer.validatorPrivateKey 0xYourPrivateKey \
+  --sequencer.coinbase YourAddress \
+  --p2p.p2pIp ip
   --p2p.maxTxPoolSize 1000000000
 ```
 
