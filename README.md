@@ -212,10 +212,8 @@ http://localhost:8080 | jq -r ".result"
 * After submission, you'll get your `Apprentice` Role
 
 
-
-  * Visit the [Discord channel](https://discord.com/invite/aztec)
   * Follow the Video guide
-  * Start the `Operator` with the `/operator start` then select follow the video guide
+
 
 --------
 
