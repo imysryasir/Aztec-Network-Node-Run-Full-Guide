@@ -70,7 +70,7 @@ sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano aut
 ```
 bash -i <(curl -s https://install.aztec.network)
 ```
-![440142117-610b5091-e8d5-45ac-9c9d-de26d080196e](https://github.com/user-attachments/assets/172299e5-9562-498e-a3af-420618cc6886)
+
 
 3️⃣ Add Aztec to PATH
 ```
@@ -83,7 +83,6 @@ Check version
 aztec
 ```
 
-![440142705-be70b89b-e644-4d75-9087-1352cd544ad5](https://github.com/user-attachments/assets/fd5b6f95-e248-49cd-a188-0d573136e667)
 
 Update version 
 ```
@@ -96,11 +95,11 @@ aztec-up alpha-testnet
 * We need to create a Sepolia Alchemy RPC  --- Visit [here](https://dashboard.alchemy.com/)
 * Login/Sign Up
 * Click on `Create New app`
-![Screenshot 2025-05-07 112101](https://github.com/user-attachments/assets/985af9c3-35cb-4eb9-afba-b32f6b886315)
+
 
 * Give a name, Select Ethereum and `Create App`
 * Click on `Network` tab and select Sepolia
-![image](https://github.com/user-attachments/assets/c2eee62c-ec39-450c-aed8-e2a2eb5deee0)
+
 * Copy the RPC, will be needed soon
 
 -----
@@ -192,7 +191,6 @@ http://localhost:8080 | jq -r ".result"
 ```
 * Replace 2x `BLOCK_NUMBER` with your number, the output from step1 above
 
-![440303878-b6479b17-b94f-4914-9320-66d6b0afd0e5](https://github.com/user-attachments/assets/0d4e2512-1557-42a6-8ec7-1423bb744c78)
 
 **Step 3: Register with Discord**
 * Type the following command in this Discord server: `/operator start`
@@ -206,7 +204,6 @@ http://localhost:8080 | jq -r ".result"
 * After submission, you'll get your `Apprentice` Role
 
 
-https://github.com/user-attachments/assets/7359be63-62bb-4951-8624-7175bd2a2bf0
 
   * Visit the [Discord channel](https://discord.com/invite/aztec)
   * Follow the Video guide
@@ -270,4 +267,6 @@ sudo kill -9 1234
 sudo fuser -k 8080/tcp
 ```
 
-Reference Video How to Free 8080 or any port - https://youtu.be/4iP4GvLfCrU?t=229
+👉 Join TG for more Updates: https://t.me/kind_cr
+
+Follow official Docs for more info and Errors!
