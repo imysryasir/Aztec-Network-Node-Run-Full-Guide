@@ -1,49 +1,61 @@
-Aztec-Network-Node-Run-Full-Guide| & | System Requirements.
+Aztec-Network-Node-Run-Full-Guide.
 
 # Hardware Requirements 
 
 ## Overview
 
-| Component      | Specification                      |
+| Component      | Requirement                        |
 |----------------|------------------------------------|
 | CPU            | 8 core Processor                   |
-| RAM            | 16 GB (6–8 GB can also run it)     |
+| RAM            | 16 GB                              |
 | Storage        | 100 GB SSD                         |
-| Internet Speed | 25 Mbps Upload / Download          |
+| Internet Speed | 30 Mbps Upload / Download          |
 
 
 > [!Note]
-> **You can start running this node on a `4-core CPU`, `6 GB of RAM` and `25 GB of storage`. However, as uptime increases, it's important to meet the recommended system requirements—otherwise, your node may eventually crash.**
+> **You can start running this node on a `4-core CPU`, `8 GB of RAM` and `30 GB of storage`. However, as uptime increases, it's important to meet the recommended system requirements—otherwise, your node may eventually crash.**
 
 
 
-## Software Requirements for VPS Users ( Only for VPS Users to Download Docker)
+## Software Requirements for VPS Users ( LocaL PC USER CAN Download & Instal Docker from web)
 
 ```
 sudo apt update -y
 ```
 ```
-sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 ```
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt update && sudo apt install -y nodejs
 ```
 ```
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev screen ufw -y
 ```
 ```
-sudo apt update -y
+sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 ```
 ```
-apt-cache policy docker-ce
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 ```
-sudo apt install docker-ce -y
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 ```
-sudo usermod -aG docker ${USER}
-su - ${USER}
-groups
+sudo apt update && sudo apt install -y docker-ce && sudo systemctl enable --now docker
+```
+```
+sudo usermod -aG docker $USER && newgrp docker
+```
+
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r .tag_name)/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose
+```
+
+*  Verify installation
+
+```
+docker --version && docker-compose --version
 ```
 
 
