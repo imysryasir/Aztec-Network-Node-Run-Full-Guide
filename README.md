@@ -251,7 +251,7 @@ Replace the following variables before you Run Node:
 
 ## To Remove or Delete Node Files
 ```
-rm -r /root/.aztec
+rm -rf ~/.aztec
 ```
 
 ## Need to Free Your 8080 Port
