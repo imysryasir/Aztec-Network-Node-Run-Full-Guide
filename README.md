@@ -198,6 +198,7 @@ http://localhost:8080 | jq -r ".result"
 ```
 * Replace 2x `BLOCK_NUMBER` with your number, the output from step1 above
 
+![440303878-b6479b17-b94f-4914-9320-66d6b0afd0e5](https://github.com/user-attachments/assets/0d4e2512-1557-42a6-8ec7-1423bb744c78)
 
 **Step 3: Register with Discord**
 * Type the following command in this Discord server: `/operator start`
