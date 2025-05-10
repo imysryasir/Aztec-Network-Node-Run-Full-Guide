@@ -119,15 +119,14 @@ aztec-up alpha-testnet
  OR
 * Use:    `https://lodestar-sepolia.chainsafe.io`
 
-5️⃣ Check IP (for Local PC)
+5️⃣ Check IP (for Local PC VPS users ignore this)
 ```
 curl ipinfo.io/ip
 ```
 ```
 curl ifconfig.me
 ```
-Copy the IP, will be needed soon
-
+Copy your IP.
 6️⃣ Enable Firewall & Open Ports
 ```
 sudo ufw allow ssh
@@ -138,20 +137,18 @@ sudo ufw allow 40500
 sudo ufw allow 8080
 ```
 
-For VPS Only
+Create New Screen 
+
 ```
-apt install screen -y
+screen -S aztec
 ```
+USE CTRL A+D (to keep it running in the background)
+To check Your Node logs
 ```
-screen -S aztecSequencer
-```
-- PRESS CTRL+A+D (to run ur node continuously)
-- To check ur Node Again
-```
-screen -r aztecSequencer
+screen -r aztec
 ```
 
-7️⃣ Start Node
+7️⃣ RUN the NODE
 ```
 aztec start --node --archiver --sequencer \
   --network alpha-testnet \
