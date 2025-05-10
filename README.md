@@ -238,19 +238,19 @@ aztec start --node --archiver --sequencer \
   --network alpha-testnet \
   --l1-rpc-urls RPC_URL  \
   --l1-consensus-host-urls BEACON_URL \
-  --sequencer.validatorPrivateKey YourPrivateKey \
-  --sequencer.coinbase YourevmAddress \
-  --p2p.p2pIp IP
+  --sequencer.validatorPrivateKey 0xYourPrivateKey \
+  --sequencer.coinbase YourAddress \
+  --p2p.p2pIp your_ip
   --p2p.maxTxPoolSize 1000000000
 ```
 
 Replace the following variables before you Run Node:
-* `RPC_URL` & `BEACON_URL`: Step 4
-* `YourPrivateKey`: Your EVM wallet private key (with 0x prefix)
-* `YourAddress`: Your EVM wallet public address
-* `IP`: Your server IP (Step 5)
+* `RPC_URL` & `BEACON_URL`: 
+* `0xPrivateKey`: Your EVM wallet private key (with 0x prefix)
+* `YourAddress`: Your Address
+* `ip`: Your IP address
 
-## Delete Node File
+## To Remove or Delete Node Files
 ```
 rm -r /root/.aztec
 ```
@@ -276,4 +276,4 @@ sudo fuser -k 8080/tcp
 
 👉 Join TG for more Updates: https://t.me/kind_cr
 
-Follow official Docs for more info and Errors!
+
