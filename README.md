@@ -140,6 +140,9 @@ sudo ufw allow 8080
 Create New Screen 
 
 ```
+sudo apt install screen -y
+```
+```
 screen -S aztec
 ```
 USE CTRL A+D (to keep it running in the background)
