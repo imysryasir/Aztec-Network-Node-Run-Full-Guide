@@ -249,7 +249,6 @@ aztec start --node --archiver --sequencer \
   --sequencer.validatorPrivateKey 0xYourPrivateKey \
   --sequencer.coinbase YourAddress \
   --p2p.p2pIp your_ip
-  --p2p.maxTxPoolSize 1000000000
 ```
 
 Replace the following variables before you Run Node:
