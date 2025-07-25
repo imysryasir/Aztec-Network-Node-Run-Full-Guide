@@ -96,7 +96,7 @@ aztec
 
 Update version 
 ```
-aztec-up alpha-testnet
+aztec-up 1.1.2
 ```
 
 4️⃣ Obtain RPC URLs
